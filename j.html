@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+</head>
+<body>
+    <h1 id="msg">hello jquery</h1>
+    <button id="btn" style="padding: 10px;">click me</button>
+    <p id="text">s m v i t</p>
+    <p id="par"># rahul and many has gf </p>
+    <button id="hide">HIDE</button>
+    <button id="show">SHOW</button>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("msg");
+        });
+        $("#btn").click(function(){
+            $("#text").text("rahul is waste");
+        });
+        $("#hide").click(function(){
+            $("#par").hide();
+        });
+        $("#show").click(function(){
+            $("#par").show();
+        });
+    </script>
+</body>
+</html>
