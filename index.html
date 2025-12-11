@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="font-family: 'Times New Roman', Times, serif; text-align: center; background-color: dodgerblue; padding: -top=40px;">
+    <h1 style="color: blue;">COUNTERS</h1>
+    <button onclick="inc()" style="padding: 10px,20px;margin: 5px;font-size: 18px;background-color: hotpink;color:red ;border: none;border-radius: 20px;">+</button>
+    <button onclick="dec()" style="padding: 10px,20px;margin: 5px;font-size: 18px;background-color: rgb(18, 213, 177);color:red ;border: none;border-radius: 20px;">-</button>
+    <button onclick="reset()" style="padding: 10px,20px;margin: 5px;font-size: 18px;background-color: rgb(56, 8, 232);color:red ;border: none;border-radius: 20px;">Reset</button>
+
+    <p id="value"
+    style="font-size: 40px;margin-top: 20px ;background-color: rgb(57, 224, 11);width: 120px;margin: auto;padding: 10px;border: 20px solid;border-radius: 19px;">0</p>
+
+    <script>
+        let count=0;
+        function render(){
+            document.getElementById("value").innerHTML =count;
+
+        }
+        function inc(){
+            count ++;
+            render();
+        }
+        function dec(){
+            count --;
+            render();
+        }
+        function reset(){
+            count =0;
+            render();
+        }
+    </script>
+</body>
+</html>
